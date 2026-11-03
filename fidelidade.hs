@@ -23,6 +23,21 @@ campanhaDaSemana = pontosEmDobro
 calculaPontos :: (Int -> Int) -> Int -> Int
 calculaPontos regra valor = regra valor
 
+-- ---------- Desafio 3: fabrica de campanhas ----------
+
+campanhaMultiplicadora :: Int -> (Int -> Int)
+campanhaMultiplicadora fator = \pontos -> pontos * fator
+
+campanhaBonus :: Int -> (Int -> Int)
+campanhaBonus bonus = \pontos -> pontos + bonus
+
+blackFriday :: Int -> Int
+blackFriday = campanhaMultiplicadora 5
+
+aniversarioCliente :: Int -> Int
+aniversarioCliente = campanhaBonus 200
+
+
 -- ---------- Desafio 4: campanhas acumuladas ----------
 
 
@@ -45,10 +60,10 @@ main = do
   -- Quarta Verde (escrevam a chamada com lambda aqui):
   print (calculaPontos (\pontos -> pontos * 2 + 10) 80)
   putStrLn "--- Desafio 3 ---"
-  -- print (calculaPontos blackFriday 150)
-  -- print (calculaPontos aniversarioCliente 150)
-  -- print (calculaPontos (campanhaMultiplicadora 4) 25)
-  -- print (calculaPontos (campanhaBonus 30) 25)
+  print (calculaPontos blackFriday 150)
+  print (calculaPontos aniversarioCliente 150)
+  print (calculaPontos (campanhaMultiplicadora 4) 25)
+  print (calculaPontos (campanhaBonus 30) 25)
   putStrLn "--- Desafio 4 ---"
   -- print (acumula blackFriday aniversarioCliente 150)
   -- print (acumula aniversarioCliente blackFriday 150)

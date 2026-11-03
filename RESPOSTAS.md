@@ -4,8 +4,8 @@
 
 | Papel | Nome completo | Usuário do GitHub |
 |---|---|---|
-| Integrante 1 (dono do fork) | | |
-| Integrante 2 (colaborador) | | |
+| Integrante 1 (Dono do fork) | Leandro Henrique | (leadrodev-sudo) |
+| Integrante 2 (Colaboradora) | Yasmin Lopes Mendes | (lopesyas) |
 
 ## Explicação da solução
 
@@ -17,7 +17,7 @@ Essas promoções valem por um dia e são usadas uma única vez. Uma lambda pass
 
 ## Desafio 3
 
-<!-- O que campanhaMultiplicadora 5 devolve? Um número ou outra coisa? Como o :t confirma isso? -->
+`campanhaMultiplicadora 5` devolve uma **função** (a regra "multiplicar por 5"), não um número. O `:t` confirma: `:t campanhaMultiplicadora 5` mostra `Int -> Int`, o tipo de uma função que recebe um `Int` e devolve um `Int`. Só aparece um número quando essa função é aplicada a um valor, como em `campanhaMultiplicadora 5 150`.
 
 ## Desafio 4
 
