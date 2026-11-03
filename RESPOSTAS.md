@@ -13,7 +13,7 @@
 
 ## Desafio 2
 
-<!-- Por que, nas duas promoções de um dia, faz sentido usar lambda em vez de função nomeada? -->
+Essas promoções valem por um dia e são usadas uma única vez. Uma lambda passada direto para `calculaPontos` descreve a regra no próprio lugar em que ela é usada, sem criar um nome que nunca mais será reaproveitado.
 
 ## Desafio 3
 
