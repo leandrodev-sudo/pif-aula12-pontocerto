@@ -21,9 +21,9 @@ Essas promoções valem por um dia e são usadas uma única vez. Uma lambda pass
 
 ## Desafio 4
 
-**a)** <!-- Por que as duas ordens dão resultados diferentes? -->
+**a)** A ordem muda a conta. Com `blackFriday` primeiro: 150 × 5 = 750, depois + 200 = 950. Com `aniversarioCliente` primeiro: 150 + 200 = 350, depois × 5 = 1750. Multiplicar e somar não dão o mesmo resultado quando a ordem troca, porque no segundo caso o bônus também é multiplicado.
 
-**b)** <!-- Qual ordem garante que o bônus de aniversário não seja multiplicado? Por quê? -->
+**b)** Primeiro `blackFriday` (multiplica) e depois `aniversarioCliente` (soma). Assim o bônus de 200 entra no final e não é multiplicado.
 
 ## Desafio 5 — revisão de código
 
