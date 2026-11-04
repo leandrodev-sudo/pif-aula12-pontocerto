@@ -44,17 +44,41 @@ Essas promoções valem por um dia e são usadas uma única vez. Uma lambda pass
 Saída do `main` de `fidelidade.hs`:
 
 ```text
-(cole aqui)
+120
+240
+170
+240
+--- Desafio 2 ---
+80
+160
+130
+240
+170
+--- Desafio 3 ---
+750
+350
+100
+55
+--- Desafio 4 ---
+950
+1750
+280
 ```
 
 Saída do `main` de `revisao.hs` (depois de corrigido):
 
 ```text
-(cole aqui)
+40
+100
+400
+200
 ```
 
 Saída de `pontocerto.c`:
 
 ```text
-(cole aqui)
+160
+130
+250
+300
 ```
