@@ -36,7 +36,8 @@ Essas promoções valem por um dia e são usadas uma única vez. Uma lambda pass
 
 ## Desafio 6 — Haskell × C
 
-<!-- Cite duas diferenças entre o calculaPontos em Haskell e o calculaPontos em C. -->
+1. Em Haskell a função é um valor comum e pode ser escrita como lambda no próprio lugar da chamada. Em C só se passa uma função já declarada com nome, via ponteiro, com a sintaxe `int (*regra)(int)`.
+2. Em Haskell dá para criar funções novas durante a execução, como nas fábricas `campanhaMultiplicadora 5`. Em C isso não existe, então cada regra precisa ser escrita antes como função própria.
 
 ## Evidência de execução
 
