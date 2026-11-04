@@ -29,10 +29,10 @@ Essas promoções valem por um dia e são usadas uma única vez. Uma lambda pass
 
 | Erro | Função | O que estava errado | Como o GHC avisou (resumo da mensagem) | Como corrigimos |
 |---|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
+| 1 | `fimDeSemana` | Lambda escrita com `=>` | `parse error on input '=>'` | Troquei por `->`: `\p -> p * 4` |
+| 2 | `aplicaRegraDuasVezes` | Assinatura diz que `regra` é um `Int` | `regra` é aplicada a um argumento, mas o tipo `Int` não é função | Assinatura `(Int -> Int) -> Int -> Int`, com parênteses |
+| 3 | `natal` | Faltou aplicar a fábrica ao bônus | Esperava `Int -> Int`, mas `campanhaBonus` tem tipo `Int -> Int -> Int` | `campanhaBonus 300` |
+| 4 | `promocaoAtual` | Aplicou a regra a 100, devolvendo um `Int` | Esperava `Int -> Int`, mas recebeu `Int` | Tirei o `100`: `promocaoAtual = pontosEmDobro` |
 
 ## Desafio 6 — Haskell × C
 
